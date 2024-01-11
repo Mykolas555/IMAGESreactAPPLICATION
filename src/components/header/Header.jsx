@@ -6,7 +6,7 @@ import BeforeLogin from "../beforeLogin/BeforeLogin";
 import AfterLogin from "../afterLogin/AfterLogin";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "../../services/AuthServices";;
+import { auth } from "../../services/AuthServices";
 
 const Header = () => {
     const [user] = useAuthState(auth);

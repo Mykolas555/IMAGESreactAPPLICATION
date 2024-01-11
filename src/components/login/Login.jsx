@@ -25,20 +25,20 @@ const Login = () => {
 
     const submitHandler = async (e) => {
         e.preventDefault();
-        try{
+        try {
             await signInWithEmailAndPassword(credentials.email, credentials.password);
-            navigate("/home");// pakeisti veliau
-            
-        }catch (error) {
-            console.error("Error signing in:", error.message);
+            navigate("/home");
+        } catch (error) {
+            console.error(error);
         }
-    }
+    };
 
     useEffect(() => {
         if (loading) return;
-        if (user) navigate("/home");// pakeisti veliau
+        if (user) { navigate("/home");} 
+        else { navigate("/login"); }
     }, [user, loading]);
-
+    
     return(
         <Container className="login">
             <Row>

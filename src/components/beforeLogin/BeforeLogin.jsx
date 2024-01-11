@@ -2,7 +2,6 @@ import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const BeforeLogin = () => {
-    
     return(
         <Dropdown>
           <Dropdown.Toggle variant="warning" id="dropdown-basic"> Vartotojo Zona</Dropdown.Toggle>

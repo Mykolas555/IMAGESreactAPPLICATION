@@ -2,10 +2,8 @@ import { Container, Row, Col } from "react-bootstrap"
 import websiteLogo from '../../images/logo.svg'
 import './home.scss'
 
-
 const Home = () => {
    
-
     return(
         <Container className="home">
             <Row>

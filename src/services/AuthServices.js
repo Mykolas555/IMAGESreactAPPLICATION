@@ -15,14 +15,12 @@ const registerWithEmailAndPassword = async (name, email, password) => {
             authProvider: 'local',
             email
         })
-    }catch(err){
-        console.log(err)
+    }catch(error){
+        console.log(error)
     }
 }
 
-const logout = () => {
-    auth.signOut();
-}
+const logout = () => {auth.signOut()}
 
 const signInWithEmailAndPassword = async (email, password) => {
     try {
@@ -36,18 +34,11 @@ const signInWithEmailAndPassword = async (email, password) => {
 const sendPaswordReset = async (email) =>{
     try{
         await auth.sendPasswordResetEmail(email);
-    }catch(err){
-        console.log(err)
+    }catch(error){
+        console.log(error)
     }
 }
 
 export default firebase;
 
-export {
-    auth,
-    db,
-    registerWithEmailAndPassword,
-    logout,
-    signInWithEmailAndPassword,
-    sendPaswordReset,
-}
+export { auth, db, registerWithEmailAndPassword, logout, signInWithEmailAndPassword, sendPaswordReset }

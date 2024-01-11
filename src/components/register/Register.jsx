@@ -15,7 +15,7 @@ const Register = () => {
         password: ""
     });
     //importuojam useri
-    const [user, loading, error] = useAuthState(auth);
+    const [user, loading] = useAuthState(auth);
     //stebim formos pasikeitimus
     const handleChange = (e)=>{
         setFormData({
@@ -34,7 +34,7 @@ const Register = () => {
 
     useEffect(() => {
         if(loading) return;
-        if(user) navigate("/works")
+        if(user) navigate("/home")
     }, [user, loading])
     
     return(

@@ -1,0 +1,33 @@
+export const getAllImages = (onImagesChanged, user) => {
+  firebase
+    .firestore()
+    .collection("images")
+    .where("uid", "==", user?.uid)
+    .onSnapshot((snapshot) => {
+      const newImages = snapshot.docs.map((doc) => ({
+        description: doc.data().description,
+        url: doc.data().url
+      }));
+      onImagesChanged(newImages);
+    });
+};
+
+
+
+
+try {
+  if (!user || !user.uid) {
+    return [];
+  }
+
+  const snapshot = await firebase
+    .firestore()
+    .collection("images")
+    .where("uid", "==", user.uid)
+    .get();
+
+  const images = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+  return images;
+} catch (error) {
+  console.error(error);
+}

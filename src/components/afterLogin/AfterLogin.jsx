@@ -4,7 +4,7 @@ const AfterLogin = () => {
     
     return(
         <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">Vartotojo vardas</Dropdown.Toggle>
+            <Dropdown.Toggle variant="warning" id="dropdown-basic">Vartotojo vardas</Dropdown.Toggle>
             <Dropdown.Menu>
                 <Dropdown.Item>Vartotojo email</Dropdown.Item>
                 <Dropdown.Item>Prideti nuotrauka</Dropdown.Item>

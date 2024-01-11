@@ -1,13 +1,36 @@
-.header{
-    height: 3rem;
-    &__logo{
-        img{
-            height: 6rem;
+.header {
+    margin-top: 1rem;
+    &__logo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 4rem;
+            height: 4rem;
         }
     }
-    &__userZone{
-        display:flex;
-        align-items: end;
+    &__appName {
+        display: flex;
         justify-content: center;
+        align-items: center;
+        h2 {
+            font-size: 2rem;
+            color: white;
+        }
+    }
+    &__userZone {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

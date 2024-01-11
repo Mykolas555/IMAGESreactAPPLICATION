@@ -1,0 +1,32 @@
+.home {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            font-size: 2rem;
+            color: white;
+            animation: fadeInAndScale 2s ease-out forwards;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            animation: fadeInAndScale 2s ease-out forwards;
+        }
+    }
+    @keyframes fadeInAndScale {
+        0% {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}

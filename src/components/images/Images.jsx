@@ -1,5 +1,5 @@
-import { Col } from "react-bootstrap";
 import { XCircle } from "react-bootstrap-icons";
+import './images.scss';
 
 const Images = ({ image, onDelete }) => {
     const deleteHandler = async () => {
@@ -11,11 +11,17 @@ const Images = ({ image, onDelete }) => {
     };
 
     return (
-        <Col>
-            <img src={image.url} alt={image.description} />
-            <p>{image.description}</p>
-            <XCircle onClick={deleteHandler} />
-        </Col>
+        <>
+            <div className="images">
+                <div className="images__image">
+                    <img src={image.url} alt={image.description} />
+                </div>
+                <div className="images__description">
+                    <p>{image.description}</p>
+                    <XCircle onClick={deleteHandler} />
+                </div>
+            </div>
+      </>
     );
 };
 

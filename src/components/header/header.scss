@@ -1,36 +1,30 @@
 .header {
-    margin-top: 1rem;
-    &__logo {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        @media (max-width: 768px) {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        &__logo{
+            margin-left: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+        &__appName {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                color: white;
+            }
+        }
+        &__userZone {
+            margin-right: 5rem;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        img {
-            width: 4rem;
-            height: 4rem;
-        }
-    }
-    &__appName {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        h2 {
-            font-size: 2rem;
-            color: white;
-        }
-    }
-    &__userZone {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        @media (max-width: 768px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
 }

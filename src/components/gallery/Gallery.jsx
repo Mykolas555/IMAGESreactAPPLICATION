@@ -1,4 +1,3 @@
-// Gallery.js
 import { Container, Row, Col } from "react-bootstrap";
 import './gallery.scss';
 import Images from "../images/Images";
@@ -6,6 +5,7 @@ import { useState, useEffect } from "react";
 import * as service from "../../services/TimesCrudServices";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from "../../services/AuthServices";
+import './galleryP1.scss';
 
 const Gallery = () => {
     const [images, setImages] = useState([]);
@@ -44,13 +44,11 @@ const Gallery = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container className="galleryContent">
-                <Row>
-                    {images.map(image => (
-                        <Images key={image.id} image={image} onDelete={handleDelete} />
-                    ))}
-                </Row>
-            </Container>
+            <div className="gallery__content">
+                {images.map(image => (
+                    <Images key={image.id} image={image} onDelete={handleDelete} />
+                ))}
+            </div>
         </>
     );
 };

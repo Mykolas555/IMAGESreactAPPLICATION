@@ -3,6 +3,23 @@
     display: flex;
     justify-content: center;
     &__header{
+        text-align: center;
         color: white
     }
+    &__content{
+        margin: 2rem 2rem 5rem 2rem;
+        background: hsla(0, 0%, 100%, 1);
+        background: linear-gradient(0deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 91%, 1) 63%);
+        background: -moz-linear-gradient(0deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 91%, 1) 63%);
+        background: -webkit-linear-gradient(0deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 91%, 1) 63%);
+        border-radius: 20px;
+        box-shadow: 20px 20px 20px rgba(0, 4, 5, 10);
+        border: solid 4px;
+        padding: 2rem;
+    }
 }
+
+
+
+
+

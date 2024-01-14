@@ -10,7 +10,6 @@ export const getUserData = (user, setUser) => {
             .then((userData) => {
                 try {
                     if (userData.docs.length > 0) {
-                        // Assuming you want to set the user data only if it exists
                         setUser(userData.docs[0].data());
                     } else {
                         console.error("User data not found");

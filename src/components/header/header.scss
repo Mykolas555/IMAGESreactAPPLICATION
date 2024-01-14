@@ -1,30 +1,31 @@
 .header {
-    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-        &__logo{
-            margin-left: 5rem;
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+    &__userZone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (max-width: 10000px) {
+        &__logo {
             display: flex;
             justify-content: center;
             align-items: center;
             img {
                 width: 5rem;
                 height: 5rem;
+                margin-top: 1rem;
             }
         }
-        &__appName {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            h2 {
-                color: white;
-            }
-        }
-        &__userZone {
-            margin-right: 5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    }
 }

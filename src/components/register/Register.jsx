@@ -8,22 +8,22 @@ import {auth, registerWithEmailAndPassword} from "../../services/AuthServices";
 const Register = () => {
     
     const navigate = useNavigate();
-    //saugom data is inputu
+    
     const [formData, setFormData] = useState({
         name: "",
         email: "", 
         password: ""
     });
-    //importuojam useri
+
     const [user, loading] = useAuthState(auth);
-    //stebim formos pasikeitimus
+    
     const handleChange = (e)=>{
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
         })
     }
-    //dedam i state ir siuciam i baze
+    
     const submitHandler = (e) =>{
         e.preventDefault()
         console.log(formData)

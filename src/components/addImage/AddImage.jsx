@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import * as service from '../../services/TimesCrudServices';
+import * as service from '../../services/CrudServices';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../../services/AuthServices';
 import { useNavigate } from 'react-router-dom';

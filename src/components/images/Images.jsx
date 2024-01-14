@@ -12,15 +12,9 @@ const Images = ({ image, onDelete }) => {
 
     return (
         <>
-            <div className="images">
-                <div className="images__image">
-                    <img src={image.url} alt={image.description} />
-                </div>
-                <div className="images__description">
-                    <p>{image.description}</p>
-                    <XCircle onClick={deleteHandler} />
-                </div>
-            </div>
+            <img className="imagesInContent" src={image.url} alt={image.description} />      
+            {/*<p>{image.description}</p>
+            <XCircle onClick={deleteHandler} />*/}
       </>
     );
 };

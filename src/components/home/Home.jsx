@@ -9,9 +9,7 @@ import * as userServices from "../../services/UserServices";
 
 const Home = () => {
     const navigate = useNavigate();
-
     const [user, loading] = useAuthState(auth);
-
     const [userData, setUserData] = useState({});
 
     useEffect(() => {

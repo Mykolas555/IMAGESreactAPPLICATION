@@ -27,16 +27,19 @@ const Login = () => {
         e.preventDefault();
         try {
             await signInWithEmailAndPassword(credentials.email, credentials.password);
-            navigate("/home");
         } catch (error) {
             console.error(error);
+            alert (`Įvyko klaida ${error}`)
         }
     };
 
     useEffect(() => {
         if (loading) return;
-        if (user) { navigate("/home");} 
-        else { navigate("/login"); }
+        if (user) { 
+            navigate("/home");} 
+        else { 
+            navigate('/login')
+        }
     }, [user, loading]);
     
     return(
@@ -48,11 +51,11 @@ const Login = () => {
                 <Col xl={12} className="login__form d-flex flex-column align-items-center justify-content-center mt-3">
                     <form className="form" onSubmit={submitHandler} >
                         <div className="mb-3">
-                            <input type="email" className="form-control" placeholder="Įveskite vartotojo el.paštą" id="email" 
+                            <input type="email" className="form-control" placeholder="Įveskite vartotojo el.paštą" id="email" required
                             name="email" value={credentials.email} onChange={handleChange}/>
                         </div>
                         <div className="mb-3">
-                            <input type="password" className="form-control" placeholder="Įveskite vartotojo slaptažodį" id="password" 
+                            <input type="password" className="form-control" placeholder="Įveskite vartotojo slaptažodį" id="password" required 
                             name="password" value={credentials.password} onChange={handleChange}/>
                         </div>
                         <div className="d-flex flex-column align-items-center justify-content-center">

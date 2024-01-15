@@ -28,6 +28,10 @@ const AddImage = () => {
 
   const handleSaveChanges = (e) => {
     e.preventDefault();
+    if (!items.url.startsWith('https://') && !items.url.startsWith('http://')) {
+      alert('Neiteisinga nuoroda į nuotrauką...')
+      return
+    }
     service.addImage({ ...items, uid: user.uid });
     navigate('/gallery');
     setShowModal(false);

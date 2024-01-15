@@ -47,15 +47,15 @@ const Register = () => {
                     <form className="form" onSubmit={submitHandler} >
                         <div className="mb-3">
                             <input type="text"className="form-control" placeholder="Įveskite vartotojo vardą" id="name" 
-                            name="name" value={formData.name} onChange={handleChange}/>
+                            name="name" required value={formData.name} onChange={handleChange}/>
                         </div>
                         <div className="mb-3">
                             <input type="email"className="form-control" placeholder="Įveskite savo el.paštą" id="email" 
-                            name="email" value={formData.email} onChange={handleChange} />
+                            name="email" required value={formData.email} onChange={handleChange} />
                         </div>
                         <div className="mb-3">
                             <input type="password"className="form-control" placeholder="Įveskite slaptažodį" id="password" 
-                            name="password" value={formData.password} onChange={handleChange}/>
+                            name="password" required value={formData.password} onChange={handleChange}/>
                         </div>
                         <div className="d-flex flex-column align-items-center justify-content-center">
                             <button className="btn btn-warning" type="submit">Registruotis</button>

@@ -1,0 +1,18 @@
+html, body {
+    min-height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    background-image: radial-gradient(circle at 77% 87%, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 8%, transparent 8%, transparent 100%),
+      radial-gradient(circle at 82% 51%, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.01) 8%, transparent 8%, transparent 100%),
+      radial-gradient(circle at 66% 64%, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 5%, transparent 5%, transparent 100%),
+      radial-gradient(circle at 23% 23%, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 5%, transparent 5%, transparent 100%),
+      radial-gradient(circle at 70% 29%, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 5%, transparent 5%, transparent 100%),
+      radial-gradient(circle at 11% 93%, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.01) 5%, transparent 5%, transparent 100%),
+      linear-gradient(135deg, rgb(222, 148, 235), rgb(92, 87, 253));
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  

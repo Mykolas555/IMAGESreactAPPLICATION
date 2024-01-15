@@ -6,6 +6,7 @@ import * as service from "../../services/CrudServices";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from "../../services/AuthServices";
 import './gallery.scss'
+import GalleryAdd from "../galleryAdd/GalleryAdd";
 
 const Gallery = () => {
     const [images, setImages] = useState([]);
@@ -29,7 +30,6 @@ const Gallery = () => {
     }, [user, loading]);
 
     const handleStyleClick = (style) => {
-        console.log('Selected Style in Gallery:', style);
         setSelectedStyle(style);
     };
 
@@ -38,7 +38,7 @@ const Gallery = () => {
             await service.deleteImage(imageId);
             setImages(prevImages => prevImages.filter(image => image.id !== imageId));
         } catch (error) {
-            console.error("Error deleting image:", error);
+            console.error(error);
         }
     };
 
@@ -51,6 +51,7 @@ const Gallery = () => {
                         <h2>Jūsų Galerija</h2>
                     </Col>
                     <div className="gallery__frame">
+                    <GalleryAdd/>
                         <Col className={`gallery__content${selectedStyle} mb-4`}>
                             {images.map(image => (
                                 <Images key={image.id} image={image} onDelete={handleDelete} />

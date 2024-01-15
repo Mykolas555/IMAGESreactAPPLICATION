@@ -1,21 +1,18 @@
-import { XCircle } from "react-bootstrap-icons";
-import './images.scss';
+import React, { useState } from 'react';
+import ImageModal from '../imageModal/ImageModal';
 
 const Images = ({ image, onDelete }) => {
-    const deleteHandler = async () => {
-        try {
-            await onDelete(image.id);
-        } catch (error) {
-            console.error(error);
-        }
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const openImageInModal = () => {
+        setModalOpen(true);
     };
 
     return (
         <>
-            <img className="imagesInContent" src={image.url} alt={image.description} />      
-            {/*<p>{image.description}</p>
-            <XCircle onClick={deleteHandler} />*/}
-      </>
+            <img onClick={openImageInModal} className="imageItem" src={image.url} alt={image.description} />
+            {isModalOpen && <ImageModal image={image} onDelete={onDelete} onClose={() => setModalOpen(false)} />}
+        </>
     );
 };
 

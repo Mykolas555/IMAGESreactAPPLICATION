@@ -1,6 +1,5 @@
 import './header.scss';
-import { Link } from "react-router-dom";
-import websiteLogo from "../../images/logo.svg";
+import { useNavigate } from "react-router-dom";
 import BeforeLogin from "../beforeLogin/BeforeLogin";
 import AfterLogin from "../afterLogin/AfterLogin";
 import React from "react";
@@ -10,12 +9,17 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Header = () => {
     const [user] = useAuthState(auth);
+    const navigate = useNavigate();
 
+    const handleLogo = () => {
+        navigate('/home')
+    }
+    
     return (
         <Container>
-            <Row className="header">
-                <Col  className="header__logo">
-                    <Link to={"/home"}><img src={websiteLogo} alt="logo" /></Link>
+            <Row className="header mt-2">
+                <Col  className="header__logo" onClick={handleLogo}>
+                    <h6>Holiday photos</h6>
                 </Col>
                 <Col className="header__userZone">
                     {user ? <AfterLogin/> : <BeforeLogin/>}

@@ -31,7 +31,6 @@ const AddImage = () => {
     service.addImage({ ...items, uid: user.uid });
     navigate('/gallery');
     setShowModal(false);
-    console.log(items);
   };
 
   const handleClose = () => {

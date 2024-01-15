@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/imageApp/static/css/main.fbcd94f6.css",
-    "main.js": "/imageApp/static/js/main.25c18bf5.js",
-    "static/media/kvadratasRutulys.png": "/imageApp/static/media/kvadratasRutulys.3d1aece00e15fcdab488.png",
-    "static/media/skersaiKvadratai.png": "/imageApp/static/media/skersaiKvadratai.2a191cd1531a5d876ced.png",
-    "static/media/sk.png": "/imageApp/static/media/sk.7ec1790061355ab2f8c5.png",
-    "static/media/ks.png": "/imageApp/static/media/ks.95eeaa15097821feb52d.png",
-    "static/media/kvadratai.png": "/imageApp/static/media/kvadratai.53a870595506fc6230e9.png",
-    "static/media/staciakampiai.png": "/imageApp/static/media/staciakampiai.75f52c3849466e36e7c1.png",
-    "static/media/rutulys.png": "/imageApp/static/media/rutulys.53afa8e3e5cf9a1109e5.png",
-    "static/media/kvadratas.png": "/imageApp/static/media/kvadratas.eb6ec55e0dced0fe4bb1.png",
-    "static/media/logo.svg": "/imageApp/static/media/logo.94553b85cea3054c80871a9b0e90d8d8.svg",
-    "index.html": "/imageApp/index.html",
-    "main.fbcd94f6.css.map": "/imageApp/static/css/main.fbcd94f6.css.map",
-    "main.25c18bf5.js.map": "/imageApp/static/js/main.25c18bf5.js.map"
+    "main.css": "/IMAGESreactAPPLICATION/static/css/main.fbcd94f6.css",
+    "main.js": "/IMAGESreactAPPLICATION/static/js/main.a4c5c67a.js",
+    "static/media/kvadratasRutulys.png": "/IMAGESreactAPPLICATION/static/media/kvadratasRutulys.3d1aece00e15fcdab488.png",
+    "static/media/skersaiKvadratai.png": "/IMAGESreactAPPLICATION/static/media/skersaiKvadratai.2a191cd1531a5d876ced.png",
+    "static/media/sk.png": "/IMAGESreactAPPLICATION/static/media/sk.7ec1790061355ab2f8c5.png",
+    "static/media/ks.png": "/IMAGESreactAPPLICATION/static/media/ks.95eeaa15097821feb52d.png",
+    "static/media/kvadratai.png": "/IMAGESreactAPPLICATION/static/media/kvadratai.53a870595506fc6230e9.png",
+    "static/media/staciakampiai.png": "/IMAGESreactAPPLICATION/static/media/staciakampiai.75f52c3849466e36e7c1.png",
+    "static/media/rutulys.png": "/IMAGESreactAPPLICATION/static/media/rutulys.53afa8e3e5cf9a1109e5.png",
+    "static/media/kvadratas.png": "/IMAGESreactAPPLICATION/static/media/kvadratas.eb6ec55e0dced0fe4bb1.png",
+    "static/media/logo.svg": "/IMAGESreactAPPLICATION/static/media/logo.94553b85cea3054c80871a9b0e90d8d8.svg",
+    "index.html": "/IMAGESreactAPPLICATION/index.html",
+    "main.fbcd94f6.css.map": "/IMAGESreactAPPLICATION/static/css/main.fbcd94f6.css.map",
+    "main.a4c5c67a.js.map": "/IMAGESreactAPPLICATION/static/js/main.a4c5c67a.js.map"
   },
   "entrypoints": [
     "static/css/main.fbcd94f6.css",
-    "static/js/main.25c18bf5.js"
+    "static/js/main.a4c5c67a.js"
   ]
 }
